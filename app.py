@@ -99,7 +99,7 @@ def post_update(id):
         article.intro = request.form['intro']
         article.text = request.form['text']
 
-        try:
+        try: 
             db.session.commit()
             return redirect('/posts')
         except:
