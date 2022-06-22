@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Leyloshka</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="/">Home</a>
+            <a class="p-2 text-dark" href="/about">About us</a>
+            <a class="p-2 text-dark" href="/posts">Articles</a>
+            <a class="btn btn-warning" href="/create-article"><b>+Add</b></a>
+    </div>
+        </nav>
+            
+    {% block body %}{% endblock %}
+
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">© 2017–2022</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
